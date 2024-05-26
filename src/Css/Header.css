@@ -1,0 +1,129 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #090b13;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    letter-spacing: 16px;
+    z-index: 3;
+}
+.logo{
+    padding: 0;
+    width: 80px;
+    margin-top: 4px;
+    max-height: 70px;
+    font-size: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+.img_logo{
+    display: block;
+    width: 100%;
+}
+.navMenu{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    margin-right: auto;
+    margin-left: 25px;
+}
+.navOption{
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    transition: all .3s;
+}
+.navOption:hover > span{
+    opacity: 0.8;
+}
+.navOption > img{
+    height: 20px;
+    min-width: 20px;
+    width: 20px;
+    z-index: auto;
+}
+span{
+    color: rgb(249,249,249);
+    font-size: 13px;
+    letter-spacing: 1.42px;
+    padding: 2px 0px;
+    white-space: wrap;
+    position: relative;
+}
+.login{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    transition: all .2s ease 0s;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: #f9f9f9;
+    color: #000;
+    border-color: transparent;
+}
+.userImg{
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+}
+.signout{
+    position: relative;
+    display: flex;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+.dropdown{
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    background: rgb(19, 19, 19);
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 50%)0pz 0pz 18px 0px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100px;
+    opacity: 0;
+    cursor: pointer;
+}
+.signout:hover > .dropdown{
+    opacity: 1;
+    transition-duration: 1s;
+}
+@media (max-width: 900px){
+    .navOption span{
+        font-size: 1.2vw;
+    }
+    .navOption > img{
+        width: 15px;
+        height: 15px;
+    }
+}   
+@media (max-width: 768px) {
+    .navMen{
+        display: none;
+    }
+    .navOption span{
+        font-size: 1vw;
+    }
+}
+@media (max-width: 700px){
+    .navOption{
+        display: none;
+    }   
+}

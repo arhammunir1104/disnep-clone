@@ -1,0 +1,14 @@
+.main{
+    position: relative;
+    background: url(../imgs/home-background.png);
+    min-height: calc(100vh- 250px);
+    overflow-x: hidden;
+    display: block;
+    top: 72px;
+    padding: 0 calc(3.5vw + 5px);
+   background-position: center; 
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* z-index: -1; */
+   min-height: 100vh;
+}

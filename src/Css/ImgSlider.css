@@ -1,0 +1,52 @@
+.carousal{
+    margin-top: 20px;
+}
+.carousal > button{
+    /* opacity: 0; */
+    /* height: 100%; */
+    /* width: 5vw; */
+    z-index: 2;
+    cursor: pointer;
+}
+.carousal > button:hover{
+    opacity: 1;
+}
+.carousal ul li button::before{
+    font-size: 20px;
+    color: rgb(150, 158, 171);
+}
+.carousal ul li.slick-active {
+    color: white !important;
+}
+.carousal ul li button{
+    color: white !important;
+}
+.slick-list{
+    overflow: initial;
+}
+.wrap{
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+.wrap a {
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px , rgb(0 0 0 /73%) 0px 16px 10px -10px;
+    display: block;
+    position: relative;
+    padding: 4px;
+}
+.wrap a img{
+    width: 100%;
+    height: 100%;
+}
+.wrap a img:hover{
+    padding: 0;
+    border: 4px solid rgba(249, 249, 249, 0.8);
+    transition-duration: 300s;
+}
+@media (max-width: 768px){
+    .carousal ul li button::before{
+        font-size: 10px;
+    }
+}
